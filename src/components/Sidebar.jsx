@@ -31,7 +31,7 @@ export const Sidebar = () => {
             <IoMdArrowForward className="text-2xl" />
           </div>
         </div>
-        <div className="flex flex-col gap-y-2 h-[550px] lg:h-[580px] overflow-y-auto overflow-x-hidden border-b">
+        <div className="flex flex-col gap-y-2 h-[500px] lg:h-[420px] overflow-y-auto overflow-x-hidden border-b">
           {cart.map((item) => (
             <CartItem item={item} key={item.id} />
           ))}
@@ -50,6 +50,19 @@ export const Sidebar = () => {
               <FiTrash2 />
             </div>
           </div>
+          <Link
+            to={"/"}
+            className="bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium"
+          >
+            Ver Carrito
+          </Link>
+
+          <Link
+            to={"/"}
+            className="bg-primary flex p-4 justify-center items-center text-white w-full font-medium"
+          >
+            Verificar
+          </Link>
         </div>
       </div>
     </>
