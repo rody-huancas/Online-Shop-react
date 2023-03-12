@@ -11,7 +11,7 @@ import { CartContext } from "../contexts/CartContext";
 
 export const Sidebar = () => {
   const { isOpen, handleClose } = useContext(SidebarContext);
-  const { cart, clearCart, total } = useContext(CartContext);
+  const { cart, clearCart, total, itemAmount } = useContext(CartContext);
 
   return (
     <>
@@ -22,7 +22,7 @@ export const Sidebar = () => {
       >
         <div className="flex items-center justify-between py-6 border-b">
           <div className="uppercase text-sm font-semibold">
-            Carrito de Compra(0)
+            Carrito de Compra({itemAmount})
           </div>
           <div
             onClick={handleClose}

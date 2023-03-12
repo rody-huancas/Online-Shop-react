@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 // imagenes
-import WomanImg from "../img/woman_hero.png";
+import model from "../img/model.png";
 
 export const Hero = () => {
   return (
     <>
-      <section className="bg-pink-200 h-[800px] bg-hero bg-no-repeat bg-center bg-cover py-24">
+      <section className="h-[800px] bg-hero bg-no-repeat bg-center bg-cover  py-24">
         <div className="container mx-auto flex justify-around h-full">
           {/* texto */}
           <div className="flex flex-col justify-center">
@@ -15,7 +15,7 @@ export const Hero = () => {
             </div>
             <h1 className="w-full text-[70px] leading-[1.1] font-light mb-4 uppercase">
               Venta de otoño con estilo{" "}
-              <span className="font-semibold">para Mujeres</span>
+              <span className="font-semibold">para Hombres y Mujeres</span>
             </h1>
             <Link
               to={"/"}
@@ -25,8 +25,8 @@ export const Hero = () => {
             </Link>
           </div>
           {/* imagen */}
-          <div className="hidden lg:block lg:w-1/2">
-            <img src={WomanImg} alt="Imagen de portada" />
+          <div className="hidden lg:block lg:w-1/2 lg:mr-20">
+            <img className="lg:w-full" src={model} alt="Imagen de portada" />
           </div>
         </div>
       </section>
