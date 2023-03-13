@@ -21,7 +21,7 @@ export const Contact = () => {
   };
   return (
     <>
-      <div className="mt-20 max-w-screen-md mx-auto p-5">
+      <div className="mt-[140px] sm:mt-20 max-w-screen-md mx-auto p-5">
         {errorInput && (
           <div className="bg-red-500 text-white font-medium text-center py-2 rounded mb-5">
             <strong>¡Error!</strong>

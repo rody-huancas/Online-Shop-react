@@ -8,7 +8,7 @@ export const Products = () => {
   const { products } = useContext(ProductContext);
 
   return (
-    <section className="mt-10 max-w-[1100px] mx-auto py-16">
+    <section className="mt-[120px] sm:mt-10 max-w-[1100px] mx-auto py-16">
       <div className="container mx-auto">
         <div className="text-center mb-10">
           <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
