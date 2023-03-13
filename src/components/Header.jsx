@@ -40,7 +40,9 @@ export const Header = () => {
 
         {/* Menu */}
         <div className="flex gap-10">
-          <Navbar />
+          <div className="absolute right-0 left-0 bg-white w-full h-full -bottom-[70px] flex justify-center sm:bg-none sm:relative sm:right-0 sm:bottom-0">
+            <Navbar />
+          </div>
           {/* Carrito de compra */}
           <div
             className="cursor-pointer flex relative"
