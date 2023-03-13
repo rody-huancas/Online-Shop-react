@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 // contexts
 import { SidebarContext } from "../contexts/SidebarContext";
 import { CartContext } from "../contexts/CartContext";
+// componentes
+import { Navbar } from "./Navbar";
 // iconos
 import { BsBag } from "react-icons/bs";
 // logo
@@ -10,6 +12,7 @@ import Logo from "../img/logo.svg";
 
 export const Header = () => {
   const [isActive, setIsActive] = useState(false);
+
   const { isOpen, setIsOpen } = useContext(SidebarContext);
   const { itemAmount } = useContext(CartContext);
 
@@ -34,22 +37,11 @@ export const Header = () => {
             <h2 className="uppercase text-xl font-bold">Shopify</h2>
           </div>
         </Link>
-        {/* Carrito de compra */}
+
+        {/* Menu */}
         <div className="flex gap-10">
-          <div className="flex items-center gap-3 font-medium text-primary">
-            <Link className="hover:text-red-600 transition" to={"/"}>
-              Inicio
-            </Link>
-            <Link className="hover:text-red-600 transition" to={"/about"}>
-              Nosotros
-            </Link>
-            <Link className="hover:text-red-600 transition" to={"/products"}>
-              Productos
-            </Link>
-            <Link className="hover:text-red-600 transition" to={"/contact"}>
-              Contáctanos
-            </Link>
-          </div>
+          <Navbar />
+          {/* Carrito de compra */}
           <div
             className="cursor-pointer flex relative"
             onClick={() => setIsOpen(!isOpen)}

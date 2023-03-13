@@ -18,7 +18,7 @@ export const Hero = () => {
               <span className="font-semibold">para Hombres y Mujeres</span>
             </h1>
             <Link
-              to={"/"}
+              to={"/products"}
               className="self-start uppercase font-semibold border-b-2 border-primary"
             >
               Descubrir más

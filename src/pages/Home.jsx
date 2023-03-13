@@ -11,6 +11,7 @@ export const Home = () => {
     (item) =>
       item.category === "men's clothing" || item.category === "women's clothing"
   );
+
   return (
     <>
       <Hero />
